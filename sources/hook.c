@@ -53,7 +53,6 @@ void hook_remove_sys_call_table_x64(void) {
 #endif
 
 ERR hook_init(void) {
-  unsigned int i;
 
   syscall_table = (unsigned long **)kallsyms_lookup_name("sys_call_table");
 
